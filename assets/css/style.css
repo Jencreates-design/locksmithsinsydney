@@ -29,9 +29,18 @@ body {
 /* Mobile sticky correction */
 @media (max-width: 768px) {
   .header {
+    position: sticky;
     top: 0;
-    padding-top: env(safe-area-inset-top);
-    margin-top: 0;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  /* iPhone safe-area fix */
+  @supports (padding-top: env(safe-area-inset-top)) {
+    .header {
+      padding-top: env(safe-area-inset-top);
+    }
   }
 }
 
