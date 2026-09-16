@@ -69,11 +69,11 @@ body {
 .hero {
   background: #0a1a33;
   color: #fff;
-  padding: 100px 20px; /* increased top/bottom spacing */
+  padding: 100px 20px;
   display: flex;
   align-items: center;
-  justify-content: center; /* centers content horizontally */
-  gap: 60px; /* more breathing room */
+  justify-content: center;
+  gap: 60px;
   width: 100%;
   text-align: left;
 }
@@ -116,7 +116,7 @@ body {
 }
 
 .hero-icon img {
-  height: 180px; /* larger hero icon */
+  height: 180px;
 }
 
 /* ------------------------------
@@ -150,7 +150,7 @@ section h3 {
 }
 
 .about-icons img {
-  height: 70px; /* larger icons */
+  height: 70px;
 }
 
 /* ------------------------------
@@ -183,7 +183,7 @@ section h3 {
 }
 
 .service-card img {
-  height: 70px; /* larger service icons */
+  height: 70px;
   margin-bottom: 15px;
 }
 
@@ -251,10 +251,16 @@ section h3 {
 }
 
 /* ------------------------------
+   ANCHOR OFFSET FIX
+--------------------------------*/
+:target {
+  scroll-margin-top: 90px; /* offset for sticky header */
+}
+
+/* ------------------------------
    MOBILE RESPONSIVE
 --------------------------------*/
 @media (max-width: 768px) {
-
   .header-inner {
     flex-direction: column;
     gap: 10px;
