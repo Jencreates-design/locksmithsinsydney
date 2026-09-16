@@ -81,6 +81,38 @@ body {
   color: #4da3ff;
 }
 
+/* ⭐ NEW — CALL NOW BUTTON */
+.call-now-btn {
+  background: #f4c542;
+  color: #000;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 20px;
+  white-space: nowrap;
+  transition: 0.2s;
+}
+
+.call-now-btn:hover {
+  background: #e0b63a;
+}
+
+/* Mobile header layout */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .call-now-btn {
+    padding: 10px 16px;
+    font-size: 15px;
+    margin-left: 0;
+  }
+}
+
 /* ------------------------------
    HERO SECTION (Improved Centering)
 --------------------------------*/
@@ -279,11 +311,6 @@ section h3 {
    MOBILE RESPONSIVE
 --------------------------------*/
 @media (max-width: 768px) {
-  .header-inner {
-    flex-direction: column;
-    gap: 10px;
-  }
-
   .nav a {
     margin: 0 10px;
   }
